@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('category');
-            $table->decimal('price');
+            $table->decimal('price', 8, 2);
             $table->string('description');
             $table->integer('stock_quantity');
             $table->foreignId('shopkeeper_id');

@@ -18,7 +18,9 @@ class ShopKeeperFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'first_name' => $this->faker->firstName(),
+            'last_name' => $this->faker->lastName(),
+            'employee_number' => $this->faker->unique()->numerify('EMP###'),
         ];
     }
 }
